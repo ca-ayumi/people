@@ -21,11 +21,11 @@ namespace Exemplo.Controller
         [HttpPut]
         public List<People> Put ([FromBody] People people) {
             var index = peoples.FindIndex (x => x.id == people.id);
-            if (index == -1) {
-                return peoples; //simulação 2
+            if (index != -1) {
+                return null; //simulação 2
             }
         
-                return null;
+            return peoples;
         }
 
         [HttpDelete]
