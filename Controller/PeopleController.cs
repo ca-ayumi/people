@@ -24,15 +24,14 @@ namespace Exemplo.Controller
             if (index == -1) {
                 return peoples;
             }
-            peoples[index] = people;
-            return peoples;
-
+        
+                return null;
         }
 
-    
-
         [HttpDelete]
-        public List<People> Delete ([FromBody] People people)
+        public List<People> Delete ([FromBody] People people){
+            return null; 
+        }
 
     }
 
