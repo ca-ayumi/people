@@ -22,7 +22,7 @@ namespace Exemplo.Controller
         public List<People> Put ([FromBody] People people) {
             var index = peoples.FindIndex (x => x.id == people.id);
             if (index != -1) {
-                return null; //simulação 2
+                return null; //simulação 3
             }
         
             return peoples;
