@@ -14,7 +14,5 @@ namespace  Exemplo.Model
 
     }
 
- 
-
 
 }
